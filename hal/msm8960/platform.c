@@ -1111,8 +1111,8 @@ bool platform_check_and_set_playback_backend_cfg(struct audio_device* adev __unu
     return false;
 }
 
-bool platform_check_and_set_capture_backend_cfg(struct audio_device* adev __unused,
-                                              struct audio_usecase *usecase __unused)
+bool platform_check_and_set_capture_backend_cfg(struct audio_device* adev,
+                   struct audio_usecase *usecase, snd_device_t snd_device)
 {
     return false;
 }
